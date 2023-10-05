@@ -7,7 +7,9 @@ body {
   */
 
   background: var(--foto-url) no-repeat top center/cover;
+  height: 100vh;
 }
+
 :root {
   --cordo-texto: white;
   --foto-url: url(./fotos/bg-mobile.jpg);
