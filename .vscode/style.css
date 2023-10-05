@@ -68,8 +68,7 @@ body * {
 }
 
 .ligth #switch button {
-  left: 0;
-  right: initial;
+  animation: deslizar 0.8s forwards;
 }
 #switch button {
   width: 32px;
@@ -81,6 +80,11 @@ body * {
   right: 0;
   position: absolute;
   z-index: 1;
+  animation: deslizardois 0.8s;
+}
+
+#switch button:hover {
+  outline: 8px solid var(--cor-icone);
 }
 
 #switch span {
@@ -148,4 +152,22 @@ ul li a:hover {
 footer {
   padding: 24px 0;
   text-align: center;
+}
+/* animation */
+@keyframes deslizar {
+  from {
+    right: 0;
+  }
+  to {
+    right: 50%;
+  }
+}
+
+@keyframes deslizardois {
+  from {
+    right: 50%;
+  }
+  to {
+    right: 0;
+  }
 }
