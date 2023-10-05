@@ -80,7 +80,7 @@ body * {
   right: 0;
   position: absolute;
   z-index: 1;
-  animation: deslizardois 0.8s;
+  animation: deslizardois 0.7s;
 }
 
 #switch button:hover {
